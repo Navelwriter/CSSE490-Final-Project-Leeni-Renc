@@ -13,7 +13,7 @@ dd if=/dev/zero of=/dev/null &  # Consume I/O
 
 while true; do
     nc 0.0.0.0 5515 < /dev/null >> /dev/null &
-    sleep 0.6
+    sleep 0.5
 #make this run in the background
 done
 
