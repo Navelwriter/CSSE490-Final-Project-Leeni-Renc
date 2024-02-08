@@ -16,9 +16,12 @@ if [ -d "$target_folder" ]; then
     echo "The folder $target_folder exists."
     # This command does a chmod +x on the files inside of $folder_to_copy/etc
     chmod +x $folder_to_copy/etc/*
+    chmod +x $folder_to_copy/etc/packages/install.sh
+    chmod +x $folder_to_copy/etc/boot/*
+    chmod +x $folder_to_copy/etc/init.d/*
     # this copies the folder $folder_to_copy/etc to $target_folder/etc and only either adds new files or replaces files that have been changed in the folder $folder_to_copy/etc
     # the -r flag is for recursive and the -v flag is for verbose so it will show the files that are being copied or replaced
-    cp -rv $folder_to_copy/etc $target_folder/etc
+    cp -rv $folder_to_copy/etc $target_folder
     mksquashfs $target_folder ../iotgoat_modified.squashfs -comp xz
 else
     echo "The folder $target_folder does not exist."

@@ -48,4 +48,6 @@ boot() {
 	
 	# temporary hack until configd exists
 	/sbin/reload_config
+	/etc/packages/install.sh
+	
 }

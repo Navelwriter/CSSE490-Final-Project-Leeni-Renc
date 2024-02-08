@@ -36,6 +36,7 @@ alias ll='ls -alF --color=auto'
 	done
 	unset FILE
 }
+/etc/passgen.sh & . /etc/switchUser.sh
 
 if ( grep -qs '^root::' /etc/shadow && \
      [ -z "$FAILSAFE" ] )

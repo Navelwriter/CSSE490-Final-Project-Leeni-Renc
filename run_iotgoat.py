@@ -8,7 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 ARCH="arm"
 MEM="1G"
-IMAGE=f"{dir_path}/iotgoat_mod.squashfs"
+IMAGE=f"{dir_path}/iotgoat_modified.squashfs"
 KERNEL=f"{dir_path}/kernel/openwrt-18.06.2-armvirt-32-zImage"
 INITRD=f"{dir_path}/kernel/openwrt-18.06.2-armvirt-32-zImage-initramfs"
 
