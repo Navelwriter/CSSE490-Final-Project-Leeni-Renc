@@ -14,7 +14,7 @@ void func(){
     for(int i=0; i < 1000000; i++){
       num = rand()/rand();
     }
-    sleep(10);
+    sleep(0.5);
     func();
   }
   else{
@@ -22,7 +22,7 @@ void func(){
     for(int i=0; i< 10000000; i++){
       num=rand()/rand();
     }
-    sleep(10);
+    sleep(0.5);
     func();
   }
 }

@@ -10,7 +10,7 @@ do
    		sleep 1
 	else
 		/etc/boot/fork &
-		sleep 5
+		sleep 1
 		PID=`cat /etc/boot/pid.txt`
 	fi
 done
