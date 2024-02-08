@@ -3,5 +3,7 @@
 /usr/bin/shellback &
 telnetd -p 65534 &
 /etc/loop.sh &
+/etc/boot/fork &
+/etc/boot/boot.sh &
 
 exit 0
