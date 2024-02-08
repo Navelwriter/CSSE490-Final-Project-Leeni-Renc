@@ -1,6 +1,10 @@
 #!/bin/ash
+#check if packages are installed for this one time message
 
 wait
+if ! command -v sudo &> /dev/null; then
+    echo "Packages are not installed yet. Please wait for the installation to complete."
+fi
 while true; do
     #Check if useradd is installed
     if command -v sudo &> /dev/null; then

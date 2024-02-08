@@ -2,9 +2,6 @@
 # This script installs all of the ipk packages in the current directory
 # This will essentially run opkg install /etc/packages/*.ipk
 
-#Redirect output to serial console at /dev/console
-exec 1>/dev/console
-exec 2>&1 #redirect stderr to stdout
 # Check if the packages directory exists
 if [ -d /etc/packages ]; then
     # First install shadow-common 
