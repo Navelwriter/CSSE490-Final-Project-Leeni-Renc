@@ -1,0 +1,3 @@
+The install for this project is very simple. It has a folder named squashfs and holds all of the necessary and changed files. The user should copy the squashfs folder to the firmware folder of the same name and replace any files that are the same, as they are modified versions of them. Make sure to set the scripts as executable using chmod +x \
+If this is not possible, place the parent folder of the `install` folder in the same directory as the unmodified `squashfs-root` folder for iotgoat and run install.sh. \
+Make sure to modify run_iotgoat.py to match the generated iotgoat_modified.py script. 
